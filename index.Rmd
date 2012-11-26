@@ -3,7 +3,7 @@ title       : Identify RNA-RBP Direct Interactions in Genome-wide Scale
 subtitle    : Fast Introduction to HITS-CLIP (or CLIP-seq)
 author      : Yun YAN
 job         : 
-framework   : deck.js   # {io2012, html5slides, shower, dzslides, ...}
+framework   : io2012   # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}

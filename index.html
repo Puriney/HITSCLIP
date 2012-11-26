@@ -1,105 +1,177 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<html>
 <head>
-	<title>Identify RNA-RBP Direct Interactions in Genome-wide Scale</title>
-	<meta name="description" content="Identify RNA-RBP Direct Interactions in Genome-wide Scale">
-	<meta name="author" content="Yun YAN">
-	<meta name="generator" content="slidify" />
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=1024, user-scalable=no">
-	
-	<!-- Core and extension CSS files -->
-	<link rel="stylesheet" href="libraries/frameworks/deck.js/core/deck.core.css">
-	<link rel="stylesheet" href="libraries/frameworks/deck.js/extensions/goto/deck.goto.css">
-	<link rel="stylesheet" href="libraries/frameworks/deck.js/extensions/menu/deck.menu.css">
-	<link rel="stylesheet" href="libraries/frameworks/deck.js/extensions/navigation/deck.navigation.css">
-	<link rel="stylesheet" href="libraries/frameworks/deck.js/extensions/status/deck.status.css">
-	<link rel="stylesheet" href="libraries/frameworks/deck.js/extensions/hash/deck.hash.css">
-	<link rel="stylesheet" href="libraries/frameworks/deck.js/extensions/scale/deck.scale.css">
-	<link rel="stylesheet" href="libraries/frameworks/deck.js/extensions/codemirror/deck.codemirror.css">
-	<link rel="stylesheet" href="libraries/frameworks/deck.js/extensions/codemirror/themes/default.css">
-	<!-- Style theme. More available in /themes/style/ or create your own. -->
-	<link rel="stylesheet" href="libraries/frameworks/deck.js/themes/style/.css">
-	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
-	<link rel="stylesheet" href="libraries/frameworks/deck.js/themes/transition/.css">
-	<script src="libraries/frameworks/deck.js/support/modernizr.custom.js"></script>
-	
-	<!-- LOAD STYLE SHEETS -->
-	<link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css">  <link rel="stylesheet" href = "assets/css/ribbons.css">
+  <title>Identify RNA-RBP Direct Interactions in Genome-wide Scale</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Identify RNA-RBP Direct Interactions in Genome-wide Scale">
+  <meta name="author" content="Yun YAN">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+    <link rel="stylesheet" href = "assets/css/ribbons.css">
 
 </head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+    <!-- END LOGO SLIDE -->
+    
 
-<body class="deck-container">
+    <!-- TITLE SLIDE -->
+    <!-- Should I move this to a Local Layout File? -->
+    <slide class="title-slide segue nobackground">
+      <hgroup class="auto-fadein">
+        <h1>Identify RNA-RBP Direct Interactions in Genome-wide Scale</h1>
+        <h2>Fast Introduction to HITS-CLIP (or CLIP-seq)</h2>
+        <p>Yun YAN<br/></p>
+      </hgroup>
+          </slide>
 
-  <!-- Begin slides -->
-    <section class="slide " id="slide-1">
-  <h2>Directly Identify RNA-RBP Interactions in Genome-wide Scale</h2>
-  <p>HITS-CLIP</p>
+    <!-- SLIDES -->
+      <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Directly Identify RNA-RBP Interactions in Genome-wide Scale</h2>
+  </hgroup>
+  <article>
+    <p>HITS-CLIP</p>
 
-</section>
-    <section class="slide " id="slide-2">
-  <h2>HITS-CLIP (or CLIP-seq)</h2>
-  <p><strong>HIT</strong>hroughput <strong>S</strong>equencing of RNAs isolated by <strong>C</strong>rosslinking <strong>I</strong>mmuno<strong>P</strong>recipitation</p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
-    <section class="slide " id="slide-3">
-  
-  <p>Boring Definition</p>
+      <slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>HITS-CLIP (or CLIP-seq)</h2>
+  </hgroup>
+  <article>
+    <p><strong>HIT</strong>hroughput <strong>S</strong>equencing of RNAs isolated by <strong>C</strong>rosslinking <strong>I</strong>mmuno<strong>P</strong>recipitation</p>
 
-</section>
-    <section class="slide " id="slide-4">
-  
-  <p>Well, for short</p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
-    <section class="slide " id="slide-5">
-  <h2>CLIP-seq = Chip-seq</h2>
-  <p>but, RNA version :P</p>
+      <slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    
+  </hgroup>
+  <article>
+    <p>Boring Definition</p>
 
-</section>
-    <section class="slide " id="slide-6">
-  <h2>CLIP-seq = CLIP + Sequencing</h2>
-  
-</section>
-    <section class="slide " id="slide-7">
-  <h2>Standard CLIP-seq Pipeline</h2>
-  <p><img src="images/CLIP-seq.png" ></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    
+  </hgroup>
+  <article>
+    <p>Well, for short</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>CLIP-seq = Chip-seq</h2>
+  </hgroup>
+  <article>
+    <p>but, RNA version :P</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>CLIP-seq = CLIP + Sequencing</h2>
+  </hgroup>
+  <article>
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Standard CLIP-seq Pipeline</h2>
+  </hgroup>
+  <article>
+    <p><img src="images/CLIP-seq.png" ></p>
 
 <p>UV-Crosslink -&gt; IP -&gt; Purify -&gt; Sequencing</p>
 
-</section>
-    <section class="slide " id="slide-8">
-  <h2>Why CLIP?</h2>
-  
-</section>
-    <section class="slide " id="slide-9">
-  <h3>Identify candidate target RNA</h3>
-  <ul>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Why CLIP?</h2>
+  </hgroup>
+  <article>
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h3>Identify candidate target RNA</h3>
+  </hgroup>
+  <article>
+    <ul>
 <li><p>RIP-Chip, indirect or non-phisiological interactions</p></li>
 <li><p>UV-Crosslink and IP, Direct interactions</p></li>
 </ul>
 
-</section>
-    <section class="slide " id="slide-10">
-  <h2>What Will CLIP-seq Date Offer? </h2>
-  
-</section>
-    <section class="slide " id="slide-11">
-  <h3>Precise Binding Position</h3>
-  <p>Besides candidate target RNA motif</p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>What Will CLIP-seq Date Offer? </h2>
+  </hgroup>
+  <article>
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h3>Precise Binding Position</h3>
+  </hgroup>
+  <article>
+    <p>Besides candidate target RNA motif</p>
 
 <p><img src="images/candidate-motif.jpg"></p>
 
 <p>Robert B. Darnell, etc. CLIP identifies Nova-Regulated RNA networks in the brain. Science. 2003. </p>
 
-</section>
-    <section class="slide " id="slide-12">
-  <h3>Potentially recuited to machinery</h3>
-  <p><img src="images/potentially_recuited_to_machinery.jpg"></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h3>Potentially recuited to machinery</h3>
+  </hgroup>
+  <article>
+    <p><img src="images/potentially_recuited_to_machinery.jpg"></p>
 
 <p>Tag detected + Significant difference between Ctrl/Knock-out: </p>
 
@@ -107,37 +179,67 @@
 
 <p>Robert B. Darnell, etc. CLIP identifies Nova-Regulated RNA networks in the brain. Science. 2003. </p>
 
-</section>
-    <section class="slide " id="slide-13">
-  <h2>CLIP Update</h2>
-  <ul>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>CLIP Update</h2>
+  </hgroup>
+  <article>
+    <ul>
 <li><p>iCLIP</p></li>
 <li><p>PAR-CLIP</p></li>
 </ul>
 
-</section>
-    <section class="slide " id="slide-14">
-  <h2>individual-nucleotide resolution CLIP</h2>
-  
-</section>
-    <section class="slide " id="slide-15">
-  
-  <p><video width="600" controls="controls">
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>individual-nucleotide resolution CLIP</h2>
+  </hgroup>
+  <article>
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    
+  </hgroup>
+  <article>
+    <p><video width="600" controls="controls">
     <source src="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3169244/bin/jove-50-2638.mov" type="video/mov">
     Your Browser Does not support Html5, please update your browser. 
 </video></p>
 
 <p>iCLIP - Transcriptome-wide Mapping of Protein-RNA Interactions with Individual Nucleotide Resolution. J Vis Exp. 2011. </p>
 
-</section>
-    <section class="slide " id="slide-16">
-  
-  <p><img src="images/iCLIP_pipeline.jpg"></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
-    <section class="slide " id="slide-17">
-  <h3>Classic CLIP:</h3>
-  <ul>
+      <slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    
+  </hgroup>
+  <article>
+    <p><img src="images/iCLIP_pipeline.jpg"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h3>Classic CLIP:</h3>
+  </hgroup>
+  <article>
+    <ul>
 <li>cDNAs truncate prematurely at the crosslinked nucleotide</li>
 <li>Truncated cDNAs are lost during the standard CLIP library preparation protocol</li>
 </ul>
@@ -146,24 +248,42 @@
 
 <p>More efficient intramolecular cDNA circularization </p>
 
-</section>
-    <section class="slide " id="slide-18">
-  <h2>Photoactivatable-Ribonucleoside-Enhanced Crosslinking and Immunoprecipitation</h2>
-  
-</section>
-    <section class="slide " id="slide-19">
-  
-  <p><video width="600" controls="controls">
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Photoactivatable-Ribonucleoside-Enhanced Crosslinking and Immunoprecipitation</h2>
+  </hgroup>
+  <article>
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    
+  </hgroup>
+  <article>
+    <p><video width="600" controls="controls">
     <source src="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3156069/bin/jove-41-2034.mp4" type="video/mp4">
     Your Browser Does not support Html5, please update your browser.
 </video></p>
 
 <p>PAR-CliP - A Method to Identify Transcriptome-wide the Binding Sites of RNA Binding Proteins, J Vis Exp. 2010.</p>
 
-</section>
-    <section class="slide " id="slide-20">
-  <h3>Classic CLIP:</h3>
-  <ul>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h3>Classic CLIP:</h3>
+  </hgroup>
+  <article>
+    <ul>
 <li>Low efficiency of UV 254 nm RNA-protein crosslinking</li>
 <li>Difficult to separate UV-crosslinked target RNA segments from background non-crosslinked RNA fragments also present in the sample</li>
 </ul>
@@ -178,79 +298,55 @@
 <li>6-SG: G-&gt;A mutations. The presense of the changes can be assessed during bioinformatic analysis, and make it possible to seperate them from the background of sequences derived from abundant cellular RNAs.</li>
 </ul>
 
-</section>
-    <section class="slide " id="slide-21">
-  <h2>Summary</h2>
-  <ul>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Summary</h2>
+  </hgroup>
+  <article>
+    <ul>
 <li>HITS-CLIP (or CLIP-seq)</li>
 <li>Exact binding position</li>
 <li>Direct interaction, candiate target RNA</li>
 <li>iCLIP and PAR-CLIP</li>
 </ul>
 
-</section>
-    <section class="slide " id="slide-22">
-  
-  <p><img src="images/logo-bonnie-basepairing.jpg"></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    
+  </hgroup>
+  <article>
+    <p><img src="images/logo-bonnie-basepairing.jpg"></p>
 
 <p>Check source code at: <a href="https://github.com/Puriney/clipseq">https://github.com/Puriney/clipseq</a></p>
 
-</section>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+
+  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
 </body>
-  <!-- deck.navigation snippet -->
-  <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
-  <a href="#" class="deck-next-link" title="Next">&#8594;</a>
-  
-  <!-- deck.status snippet -->
-  <p class="deck-status">
-  <span class="deck-status-current"></span>
-    /
-  <span class="deck-status-total"></span>
-  </p>
-  
-  <!-- deck.goto snippet -->
-  <form action="." method="get" class="goto-form">
-  	<label for="goto-slide">Go to slide:</label>
-  	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
-  	<datalist id="goto-datalist"></datalist>
-  	<input type="submit" value="Go">
-  </form>
-  
-  <!-- deck.hash snippet -->
-  <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
-  
-  
-  <!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
-  <script>window.jQuery || document.write('<script src="libraries/frameworks/deck.js/support/jquery-1.7.min.js"><\/script>')</script>
-  
-  <!-- Add Slide Class to Build Elements -->
-  <script type='text/javascript'>
-  $('ol.build li').addClass('slide')
-  $('ul.build li').addClass('slide')
-  </script>
-  
-  <!-- Deck Core and extensions -->
-  <script src="libraries/frameworks/deck.js/core/deck.core.js"></script>
-  <script src="libraries/frameworks/deck.js/extensions/hash/deck.hash.js"></script>
-  <script src="libraries/frameworks/deck.js/extensions/menu/deck.menu.js"></script>
-  <script src="libraries/frameworks/deck.js/extensions/goto/deck.goto.js"></script>
-  <script src="libraries/frameworks/deck.js/extensions/status/deck.status.js"></script>
-  <script src="libraries/frameworks/deck.js/extensions/navigation/deck.navigation.js"></script>
-  <script src="libraries/frameworks/deck.js/extensions/scale/deck.scale.js"></script>
-  <script src="libraries/frameworks/deck.js/extensions/codemirror/codemirror.js"></script>
-  <script src="libraries/frameworks/deck.js/extensions/codemirror/mode/javascript/javascript.js"></script>
-  <script src="libraries/frameworks/deck.js/extensions/codemirror/deck.codemirror.js"></script>
-  
-  
-  <!-- Initialize the deck -->
-  <script>
-  $(function() {
-  	$.deck('.slide');
-  });
-  </script>  <!-- LOAD HIGHLIGHTER JS FILES -->
+<!-- Grab CDN jQuery, fall back to local if offline -->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery-1.7.min.js"><\/script>')</script>
+<!-- Load Javascripts for Widgets -->
+<!-- LOAD HIGHLIGHTER JS FILES -->
 <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <!-- DONE LOADING HIGHLIGHTER JS FILES -->
-
 </html>
